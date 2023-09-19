@@ -28,8 +28,6 @@ public class Main {
         infinateLooper(scan);
 
 
-        scan.nextLine();
-
 
 
 
@@ -40,9 +38,13 @@ public class Main {
 
     private static void infinateLooper(Scanner scan){
         do {
-            System.out.println("Ge mig din ålder");
-            int age = scan.nextInt();
-            System.out.println(age);
+            System.out.println("Give me a word");
+            String word = scan.nextLine();
+            System.out.println(word);
+
+            if (word.equalsIgnoreCase("stop")){
+                return;
+            }
         }while(true);
     }
 
