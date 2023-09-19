@@ -40,10 +40,15 @@ public class Main {
         do {
             System.out.println("Give me a word");
             String word = scan.nextLine();
-            System.out.println(word);
-
-            if (word.equalsIgnoreCase("stop")){
-                return;
+            switch (word) {
+                case "Stop":
+                    return;
+                case "1":
+                    System.out.println("Throwing!");
+                    break;
+                default:
+                    System.out.println("Wrong input");
+                    break;
             }
         }while(true);
     }
