@@ -24,9 +24,26 @@ public class Main {
 
         scan.nextLine();
 
+        // Öv 3
+        infinateLooper(scan);
+
+
+        scan.nextLine();
 
 
 
+
+
+
+    }
+
+
+    private static void infinateLooper(Scanner scan){
+        do {
+            System.out.println("Ge mig din ålder");
+            int age = scan.nextInt();
+            System.out.println(age);
+        }while(true);
     }
 
 
