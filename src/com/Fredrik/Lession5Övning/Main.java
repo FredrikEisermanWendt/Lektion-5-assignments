@@ -10,7 +10,7 @@ public class Main {
 
         // Öv 1
         Scanner scan = new Scanner(System.in);
-
+/*
         System.out.println("What is your name?");
         String name = scan.nextLine();
         System.out.println("Player #1: " + name );
@@ -26,6 +26,20 @@ public class Main {
 
         // Öv 3
         infinateLooper(scan);
+
+ */
+
+        // Öv 6
+        System.out.println("What is your age");
+        if (scan.hasNextInt()) {
+            int age = scan.nextInt();
+            System.out.println(age);
+        }else{
+            System.out.println("Wrong Data type");
+        }
+
+
+
 
 
 
